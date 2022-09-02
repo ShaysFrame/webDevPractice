@@ -1,0 +1,137 @@
+.single-portfolio .aux-elementor-header .aux-wrapper , .single-post .aux-elementor-header .aux-wrapper{
+	width:100%;
+	height:500px;
+	background-image:url(https://unionpowerinc.com/wp-content/uploads/2022/08/Edit-1-MixedPlus-50p-less-blue-shade.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position:absolute;
+}
+.single-portfolio #inner-body{
+	overflow:hidden !important;
+}
+.single-portfolio .aux-wrapper:after{
+	content:'Product Details';
+	font-family:'heebo';
+	font-size:70px;
+	color:#8b0000;
+	font-weight:bolder;
+	position:absolute;
+	margin-top:40px;
+	margin-left:10%
+}
+.single-portfolio .elementor-11 .elementor-element.elementor-element-144c666, .single-post .elementor-11 .elementor-element.elementor-element-144c666{
+	margin-top:0;
+	padding-top:40px;
+}
+.single-portfolio .aux-primary{
+	padding-top:20%;
+}
+.single-post #primary , .single-portfolio #primary{
+	margin-top:150px;
+}
+/* -----Post----- */
+.single-post .entry-media img, .single-portfolio .entry-media img{
+	border-radius:10px;
+	box-shadow: 0px 8px 60px 		#0000000F;
+}
+.single-post .entry-title {
+	text-align:center;
+	max-width:720px;
+	margin:0 auto !important;
+}
+.single-post .entry-info{
+	text-align:center;
+}
+.single-post .entry-tax a{
+	background: var( --auxin-featured-color-1 );
+	box-shadow: 0px 3px 15px 				#FF7F5066;
+	border-radius:10px;
+	padding:5px 15px;
+}
+/* -----like & share ----- */
+
+.single-portfolio .type-portfolio .entry-actions{
+	border:none;
+}
+.single-portfolio .aux-socials .aux-text{
+	display:none;
+}
+.single-portfolio .aux-single-portfolio-share{
+	position: relative;
+	top: -10px;
+}
+.single-post .entry-meta{
+	width:70% !important;
+	margin:0 auto !important;
+	border-top: none !important;
+}
+/* -----Form----- */
+.single-post #respond{
+	max-width: 55%;
+	margin: 0 auto;
+}
+.single-post #reply-title{
+	text-align:center;
+}
+.single-post #reply-title::before{
+    content:'';
+    width: 15px;
+    height: 15px;
+    border: 4px solid 					var( --auxin-featured-color-1 );
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 3px 15px 			#FF7F5066;
+    position: relative;
+    top:0px;
+    left: 47%;
+    margin-bottom: 10px;
+}
+.single-post .comment-notes , form div:nth-child(4){
+		display:none;
+}
+.single-post textarea , .aux-input-group input{
+    border-radius: 10px;
+    background-color: #fff;
+		box-shadow: 0px 0px 50px 		#9E56FB2E;
+    border: none;
+    margin: 0 auto;
+}
+.single-post input[type='submit']{
+	background: var( --auxin-featured-color-1 );
+	box-shadow: 0px 3px 15px 		#FF7F5066;
+	border-radius:50px;
+	padding:15px 55px !important;
+}
+.single-post .form-submit{
+	margin:50px auto !important;
+}
+.single-post .aux-form-cookies-consent{
+	position:absolute;
+	bottom: 5%;
+	left: 31%;
+}
+.single-post .aux-checkbox{
+	border:1px solid var( --auxin-featured-color-1 );
+	box-shadow: 0px 3px 23px #FF7F5066;
+	border-radius:20px;
+}
+#Path_66-2{
+	display:none;
+}
+.single-portfolio .entry-info{
+	display:none;
+}
+/* ----Portfolio MetaData---- */
+.single-portfolio .aux-button{
+	background: var( --auxin-featured-color-1 );
+	box-shadow: 0px 3px 15px 			#FF7F5066;
+	text-shadow:none;
+	padding:16px 21px 15px 21px;
+}
+.single-portfolio .entry-meta-data dl{
+	margin-bottom:60px;
+}
+header.aux-elementor-header {
+	position: static;
+	z-index: 5;
+}

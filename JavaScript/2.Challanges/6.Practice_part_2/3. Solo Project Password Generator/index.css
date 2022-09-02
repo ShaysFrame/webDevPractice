@@ -1,0 +1,123 @@
+:root{
+  --bg-body:#1F2937;
+  --bg-pass:#273549;
+  --green: #4ADf86;
+  --green-btn: #10B981;
+  --white: #ffffff;
+  --grey: rgb(193, 193, 193);
+  --hr-color:#2F3E53;
+}
+
+body{
+  margin: 0;
+  background: var(--bg-body);
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 25px;
+  font-family: Karla, Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+h1{
+  font-size: 40px;
+  line-height: 10px;
+  color: var(--white);
+}
+#h1-green{
+  color: var(--green);
+}
+p{
+  color:var(--grey);
+  font-size: 20px;
+}
+
+button{
+  font-size: 16px;
+  border: none;
+  background: var(--green-btn);
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+hr{
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-top: 1px solid var(--hr-color);
+  margin-left: 0;
+}
+
+
+
+#pass-area{
+  display: flex;
+  margin: 35px 0;
+}
+
+#pass-field-one {
+  background: var(--bg-pass);
+  border-radius: 10px;
+  width: 200px;
+  height: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: var(--green);
+  padding: 15px;
+}
+#pass-field-two {
+  background: var(--bg-pass);
+  border-radius: 10px;
+  width: 200px;
+  height: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: var(--green);
+  padding: 15px;
+}
+
+/* pass length dropdown style "STARTS" */
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+select{
+  width: 150px;
+  height: 30px;
+
+  margin-left: 5px;
+
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  appearance: none; /* this removes the arrow on the right*/
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--bg-body);
+
+  outline: none;
+}
+
+select:hover{
+}
+select::after{
+  color: var(--green-btn);
+}
+
+/* hides the arrow on the dropdown list */
+/* select{
+  -webkit-appearance: none; 
+} */
+
+.selectLength{
+  display: none; /* hides the first element of the select list */
+}
+
+
+
+

@@ -1,0 +1,69 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify content: center; justifies the one flex item that we have in this code. reminder that the alignment of flex intem here is inline or in another word in a row and not in a column so if we added another flex item the 2nd one would go next to it on right or left resepectively where we may add*/
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.calculator{
+  background-color: darkgray;
+  width: 130px;
+  padding: 30px;
+  border-radius: 20px;
+  /* makes the content of calculator a flex items now we can manipulate all the conent of this div according to flex styling thingy for example flex direction, initially the input box goes side by side when we put display:flex without any other properties */
+  display: flex;
+  /* but when we use flex-direction: column; the 1st input field + and 2nd input field are aligned in a column instead of a row.*/
+  flex-direction: column;
+  /* Finally align-items: center; helps us aligining the flex items in the center virtically */
+  align-items: center;
+  /* gives a 50px of margin around the class */
+  margin: 50px;
+}
+
+input{
+  /* width = gives a width of the input field */
+  width: 100%;
+  /* height = gives a height of the input field */
+  height: 50px;
+  /* border = Border thickness */
+  border: 0;
+  /* border-radius = rounds the edges of a text field */
+  border-radius: 10px;
+  /* puts a good padding for the input cursor to start showing it's input */
+  padding: 0 10px 0 10px; /* top 0, left 10, bot 0, right 10 */
+  text-align: center;
+}
+
+h1{
+  /* spaces between two input field from the + icon */
+  line-height: 30%;
+}
+
+.button{
+  background-color: lightcoral;
+  width: 50px;
+  height: 30px;
+  margin: 10px 0 0 0;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 10px dimgray;
+}
+
+.screen{
+  background-color: lightgreen;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0 0 0;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: darkgreen;
+}
+
+
+
