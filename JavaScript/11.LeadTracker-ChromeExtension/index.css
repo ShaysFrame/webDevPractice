@@ -29,13 +29,35 @@ button {
   color: white;
   cursor: pointer;
 }
+button:hover{
+  background: rgb(10, 151, 10);
+}
 
 #delete-btn{
   background: white;
   color: #5f9341;
 }
+#delete-btn:hover{
+  background: whitesmoke;
+}
+
+#remove-btn{
+  padding: 2px 4px;
+  border-radius: 2px;
+  background: white;
+  color: #5f9341;
+  margin-left:5px;
+}
+
+#remove-btn:hover{
+  background: whitesmoke;
+}
 
 /* STYLE THE LIST ACCORDING TO THE DESIGN */
+#ul{
+  
+}
+
 ul {
   margin-top: 20px;
   list-style: none;
@@ -44,6 +66,8 @@ ul {
 
 li {
   margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {

@@ -1,4 +1,90 @@
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const tabBtn = document.getElementById("tab-btn");
+const deleteBtn = document.getElementById("delete-btn");
+const ulEl = document.getElementById("ul-el");
+const removeBtn = document.getElementById("remove-btn");
+
 let myLeads = [];
+const localStorageData = JSON.parse(localStorage.getItem("myLeads"));
+if(localStorageData) // if data in the local storage comes to be a truthy value then the following lines of codes will be executed.
+{
+  myLeads = localStorageData;
+  render(myLeads);
+}
+
+inputBtn.addEventListener("click", function(){
+  if(inputEl.value)
+  {
+    myLeads.push(inputEl.value);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    inputEl.value = "";
+    render(myLeads);
+  }
+  console.log(myLeads);
+});
+
+tabBtn.addEventListener("click", function(){
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render(myLeads);
+    console.log(myLeads);
+  });
+});
+
+deleteBtn.addEventListener("dblclick", function(){
+  localStorage.clear();
+  myLeads = [];
+  render(myLeads); //clears the localStorage
+  console.log(myLeads);
+});
+
+removeBtn.addEventListener("dblclick", function(){
+  localStorage.removeItem("myLeads")
+});
+
+
+function render(leads)
+{
+  let listItems = "";
+  for(let count = 0; count < leads.length; count++)
+  {
+    listItems += `
+      <li>
+        <a href="${leads[count]}">${leads[count]}</a>
+        <button id="remove-btn">Remove</button>
+      </li>
+    `;
+  }
+  ulEl.innerHTML = listItems;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
@@ -50,7 +136,7 @@ deleteBtn.addEventListener("dblclick", function(){
   localStorage.clear();
   myLeads = []
   render(myLeads);
-})
+}) */
 
 
 
